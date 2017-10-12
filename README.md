@@ -4,7 +4,9 @@ I have been mucking around with Terraform so that I can learn how it works!
 
 ## Usage
 
-To be able to authenticate with AWS, put an access/secret key pair into `terraform.tfvars` like so:
+### Secrets
+
+To be able to authenticate with AWS, put an access/secret key pair into `secrets.auto.tfvars` like so:
 
 ```terraform
 access_key = "Access key ID"

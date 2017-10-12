@@ -6,7 +6,7 @@
 .terraform/
 
 # I have some secrets in here
-terraform.tfvars
+secrets.auto.tfvars
 
 # Don't keep anything that is output by these scripts
 output/
