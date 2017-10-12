@@ -4,3 +4,6 @@
 
 # Module directory
 .terraform/
+
+# I have some secrets in here
+terraform.tfvars
