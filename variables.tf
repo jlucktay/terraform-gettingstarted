@@ -1,5 +1,6 @@
 variable "access_key" {}
 variable "secret_key" {}
+variable "consul_instance_private_key_path" {}
 
 variable "region" {
   default = "eu-west-2"
