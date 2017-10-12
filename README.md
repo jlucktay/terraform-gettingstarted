@@ -14,11 +14,15 @@ access_key = "Access key ID"
 secret_key = "Secret access key"
 ```
 
+### Initialisation
+
 Initialise Terraform, to download the appropriate provider binary, etc:
 
 ```bash
 terraform init
 ```
+
+### Planning
 
 Have Terraform plan its deployment:
 
@@ -26,8 +30,18 @@ Have Terraform plan its deployment:
 terraform plan
 ```
 
+### Deployment
+
 Deploy resources:
 
 ```bash
 terraform apply
+```
+
+### Cleaning up
+
+When the resources are no longer needed, get rid of them:
+
+```bash
+terraform destroy
 ```
