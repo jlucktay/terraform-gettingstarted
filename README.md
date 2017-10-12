@@ -45,3 +45,15 @@ When the resources are no longer needed, get rid of them:
 ```bash
 terraform destroy
 ```
+
+## State
+
+Terraform can store state either locally or remotely.
+
+There is a `backend.tf` file which contains a commented config to make use of the Consul demo server.
+
+To start storing state remotely, uncomment the `backend` config and run `terraform init` again.
+
+Follow the prompts to migrate local state to the new remote.
+
+To bring state storage back to local, simply re-commend the `backend` config and run `terraform init` once more.
