@@ -48,7 +48,7 @@ resource "aws_eip" "my_eip" {
   vpc      = true
 
   provisioner "local-exec" {
-    command = "echo ${aws_eip.my_eip.public_ip} > ip_address.txt"
+    command = "mkdir -p output ; echo ${aws_eip.my_eip.public_ip} > output/ip_address.txt"
   }
 }
 

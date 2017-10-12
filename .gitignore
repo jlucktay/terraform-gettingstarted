@@ -7,3 +7,6 @@
 
 # I have some secrets in here
 terraform.tfvars
+
+# Don't keep anything that is output by these scripts
+output/
