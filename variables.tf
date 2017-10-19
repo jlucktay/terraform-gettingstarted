@@ -8,7 +8,7 @@ variable "region" {
 
 variable "tag_killdate" {
   type    = "string"
-  default = "2017-01-01"
+  default = "01/01/2017"
 }
 
 variable "default_tags" {

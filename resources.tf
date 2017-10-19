@@ -10,7 +10,6 @@ resource "aws_vpc" "my_vpc" {
   lifecycle {
     ignore_changes = [
       "tags.%",
-      "tags.KillDate",
     ]
   }
 }
@@ -40,7 +39,6 @@ resource "aws_instance" "my_instance" {
   lifecycle {
     ignore_changes = [
       "tags.%",
-      "tags.KillDate",
       "tags.StopDaily",
     ]
   }
