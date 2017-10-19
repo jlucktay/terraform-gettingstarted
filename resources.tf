@@ -3,7 +3,8 @@ resource "aws_vpc" "my_vpc" {
 
   tags = "${merge(
     var.default_tags,
-    map("Name", "${var.resource_name_prefix}vpc")
+    map("Name", "${var.resource_name_prefix}vpc"),
+    map("KillDate", "${var.tag_killdate}")
   )}"
 
   lifecycle {
@@ -20,7 +21,8 @@ resource "aws_subnet" "my_subnet" {
 
   tags = "${merge(
     var.default_tags,
-    map("Name", "${var.resource_name_prefix}subnet")
+    map("Name", "${var.resource_name_prefix}subnet"),
+    map("KillDate", "${var.tag_killdate}")
   )}"
 }
 
@@ -31,7 +33,8 @@ resource "aws_instance" "my_instance" {
 
   tags = "${merge(
     var.default_tags,
-    map("Name", "${var.resource_name_prefix}instance")
+    map("Name", "${var.resource_name_prefix}instance"),
+    map("KillDate", "${var.tag_killdate}")
   )}"
 
   lifecycle {
@@ -57,7 +60,8 @@ resource "aws_internet_gateway" "my_igw" {
 
   tags = "${merge(
     var.default_tags,
-    map("Name", "${var.resource_name_prefix}igw")
+    map("Name", "${var.resource_name_prefix}igw"),
+    map("KillDate", "${var.tag_killdate}")
   )}"
 }
 

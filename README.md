@@ -22,6 +22,14 @@ Initialise Terraform, to download the appropriate provider binary, etc:
 terraform init
 ```
 
+### Tagging with a reasonable kill date
+
+Source the `tag_killdate.sh` script to set a KillDate tag value as an environment variable, which Terraform will pick up:
+
+```bash
+. ./tag_killdate.sh
+```
+
 ### Planning
 
 Have Terraform plan its deployment:

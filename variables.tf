@@ -6,6 +6,11 @@ variable "region" {
   default = "eu-west-2"
 }
 
+variable "tag_killdate" {
+  type    = "string"
+  default = "2017-01-01"
+}
+
 variable "default_tags" {
   type = "map"
 
